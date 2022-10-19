@@ -19,13 +19,13 @@ public class Omv_Flutter {
     public void test() throws MalformedURLException, InterruptedException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel");
+        desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus 10 API 29");
         desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\Dijital Sahne\\Desktop\\appiumWorkShop-master\\src\\test\\java\\AppiumClassFirst\\APP\\ovm-flutter.apk");
+        desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\Dijital Sahne\\IdeaProjects\\appiumWorkShop-master\\src\\test\\java\\AppiumClassFirst\\APP\\ovm-flutter.apk");
         // ! Yukarıdaki path i kendinize göre ayarlayınız.
 
-
+        Thread.sleep(3000);
         AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http:127.0.0.1:4723/wd/hub"), desiredCapabilities);
 
 
